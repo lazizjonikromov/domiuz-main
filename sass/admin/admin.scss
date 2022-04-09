@@ -1,0 +1,151 @@
+$red: #00C65E;
+$dark: #282830;
+$white: #fff;
+$mainText: #212529;
+
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+html {
+    // scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+
+    .container {
+        max-width: 1700px;
+    }
+
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+
+    .admin-dashboard {
+
+
+
+        .sidebar {
+            height: 100vh;
+            border: 2px solid $red;
+            padding: 15px;
+            background: #00c65e3d;
+
+            .logo {
+                padding: 25px 25px 25px 0;
+                text-align: center;
+            }
+
+            .accordion {
+                .accordion-item {
+                    border: 1px solid $red;
+                    margin-top: 20px;
+                    border-radius: 10px;
+
+
+                    .accordion-body {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 15px 0 0px 0;
+
+                        ul {
+                            padding: 0 10px;
+
+                            li {
+                                padding: 10px;
+
+                                a {
+                                    color: $dark;
+                                    font-size: 17px;
+                                    font-weight: 600;
+                                    transition: all .2s ease-in-out;
+
+                                    &:hover {
+                                        color: $red;
+                                        border-bottom: 1px solid $red;
+                                        padding-bottom: 8px;
+                                    }
+                                }
+
+                            }
+                        }
+
+
+                    }
+
+                    .accordion-button {
+                        color: $mainText;
+                        font-weight: 600;
+                        border-radius: 8px;
+
+
+                        &:focus {
+                            box-shadow: none;
+                            background-color: $red;
+                            color: $white;
+                        }
+
+                        &:not(.collapsed) {
+                            background-color: $red;
+                            color: $white;
+                            border-top-left-radius: 8px;
+                            border-top-right-radius: 8px;
+                            border-bottom-left-radius: 0;
+                            border-bottom-right-radius: 0;
+                        }
+                    }
+
+                }
+
+
+            }
+
+        }
+
+        .main-dashboard {
+            padding: 0;
+
+            .navBar {
+                background-color: #00c65e3d;
+                border: 2px solid $red;
+                border-left: none;
+
+                .profile-user {
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    height: 100px;
+                    padding: 30px;
+
+
+                    h5 {
+                        color: $dark;
+                        margin-right: 10px;
+                        border-left: 1px solid $red;
+                        padding: 20px 15px 15px 15px;
+                    }
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+}
