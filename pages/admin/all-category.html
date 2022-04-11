@@ -55,37 +55,37 @@
                   <div class="accordion-body">
                     <ul>
                       <li>
-                        <a href="">Telefon va gadjetlar</a>
+                        <a href="dashboard.html">Telefon va gadjetlar</a>
                       </li>
                       <li>
-                        <a href="">Uy va ishxona jihozlari</a>
+                        <a href="dashboard.html">Uy va ishxona jihozlari</a>
                       </li>
                       <li>
-                        <a href="">Televizor/Video/Audio</a>
+                        <a href="dashboard.html">Televizor/Video/Audio</a>
                       </li>
                       <li>
-                        <a href="">Go‘zallik va salomatlik</a>
+                        <a href="dashboard.html">Go‘zallik va salomatlik</a>
                       </li>
                       <li>
-                        <a href="">Mebel</a>
+                        <a href="dashboard.html">Mebel</a>
                       </li>
                       <li>
-                        <a href="">Maishiy texnika</a>
+                        <a href="dashboard.html">Maishiy texnika</a>
                       </li>
                       <li>
-                        <a href="">Pardoz va atir buyumlar</a>
+                        <a href="dashboard.html">Pardoz va atir buyumlar</a>
                       </li>
                       <li>
-                        <a href="">Kompyuterlar va orgtexnika</a>
+                        <a href="dashboard.html">Kompyuterlar va orgtexnika</a>
                       </li>
                       <li>
-                        <a href="">Avtomobil jihozlari va uskunalari</a>
+                        <a href="dashboard.html">Avtomobil jihozlari va uskunalari</a>
                       </li>
                       <li>
-                        <a href="">Oshxona texnikasi</a>
+                        <a href="dashboard.html">Oshxona texnikasi</a>
                       </li>
                       <li>
-                        <a href="">Ta'lim</a>
+                        <a href="dashboard.html">Ta'lim</a>
                       </li>
                     </ul>
                   </div>
@@ -117,7 +117,7 @@
                         <a href="all-category.html">All Categories</a>
                       </li>
                       <li>
-                        <a href="add-category.html">Add Category</a>  
+                        <a href="add-category.html">Add Category</a>
                       </li>
                     </ul>
                   </div>
@@ -160,8 +160,110 @@
                 <img src="/img/undraw_profile.svg" alt="" />
               </div>
             </div>
-            <div w3-include-html="add-product.html"></div>
-            <div w3-include-html="all-product.html"></div>
+            <div class="card mt-5">
+                <div
+                  class="card-header py-3 d-flex justify-content-between align-items-center h-100 w-100"
+                >
+                  <div class="">
+                    <h3 class="m-0 font-weight-bold text-p">Categories</h3>
+                  </div>
+                  <form type="get" action="#">
+                    <div class="d-flex">
+                      <div class="" style="margin-right: 10px">
+                        <input
+                          class="form-control mr-sm-2"
+                          type="search"
+                          name="query"
+                          placeholder="Mahsulot Nomi"
+                          aria-label="Search"
+                        />
+                      </div>
+                      <div class="">
+                        <button class="btn myBtn" type="submit">Qidirish</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table
+                      class="table table-bordered"
+                      id="datatable"
+                      width="100%"
+                      cellspacing="0"
+                    >
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Nomi</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <td>1</td>
+                        <td>Telefon va gadjetlar</td>
+                        <td class="">
+                          <div class="d-flex align-items-center">
+                            <a href="#" class="btn btn-info"
+                              ><i class="fa fa-edit"></i
+                            ></a>
+                            <a href="#" class="btn btn-danger ml-2"
+                              ><i class="fa fa-trash"></i
+                            ></a>
+                          </div>
+                        </td>
+                      </tbody>
+                      <tbody>
+                        <td>2</td>
+                        <td>Uy va Ishxona jihozlari</td>
+                        <td class="">
+                          <div class="d-flex align-items-center">
+                            <a href="#" class="btn btn-info"
+                              ><i class="fa fa-edit"></i
+                            ></a>
+                            <a href="#" class="btn btn-danger ml-2"
+                              ><i class="fa fa-trash"></i
+                            ></a>
+                          </div>
+                        </td>
+                      </tbody>
+                      <tbody>
+                          <td>3</td>
+                          <td>Televizor/Video/Audio</td>
+                          <td class="">
+                            <div class="d-flex align-items-center">
+                              <a href="#" class="btn btn-info"
+                                ><i class="fa fa-edit"></i
+                              ></a>
+                              <a href="#" class="btn btn-danger ml-2"
+                                ><i class="fa fa-trash"></i
+                              ></a>
+                            </div>
+                          </td>
+                        </tbody>
+                    </table>
+                    <div class="d-flex justify-content-center w-100">
+                      <div class="">
+                        <nav aria-label="...">
+                          <ul class="pagination">
+                            <li class="page-item disabled">
+                              <a class="page-link">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page">
+                              <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">Next</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>                
           </div>
         </div>
       </div>

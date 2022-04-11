@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card shadow mt-5">
+      <div
+        class="card-header py-3 d-flex justify-content-between align-items-center h-100 w-100"
+      >
+        <div class="">
+          <h3 class="m-0 font-weight-bold text-p">Mahsulot Qo`shish</h3>
+        </div>
+      </div>
+      <div class="card-body">
+        <form action="#" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nomi"
+              name="title"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              id="titleDescription"
+              class="form-control"
+              name="description"
+              required
+              placeholder="Ma'lumot"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="number"
+              id="titlePrice"
+              class="form-control"
+              name="price"
+              required
+              placeholder="Narx"
+            />
+          </div>
+
+          <div class="form-group">
+            <select name="category_id" class="form-control" id="selectCategory">
+              <option value="#">Telefon va gadjetlar</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="file"
+              id="titleIMage"
+              class="form-control"
+              name="image"
+            />
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-info">Qo`shish</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

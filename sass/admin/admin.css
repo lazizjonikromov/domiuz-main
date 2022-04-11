@@ -21,8 +21,7 @@ body a:hover {
 }
 
 body .admin-dashboard .sidebar {
-  height: 100vh;
-  border: 2px solid #00C65E;
+  height: 150vh;
   padding: 15px;
   background: #00c65e3d;
 }
@@ -33,7 +32,6 @@ body .admin-dashboard .sidebar .logo {
 }
 
 body .admin-dashboard .sidebar .accordion .accordion-item {
-  border: 1px solid #00C65E;
   margin-top: 20px;
   border-radius: 10px;
 }
@@ -55,6 +53,9 @@ body .admin-dashboard .sidebar .accordion .accordion-item .accordion-body ul {
 
 body .admin-dashboard .sidebar .accordion .accordion-item .accordion-body ul li {
   padding: 10px;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 body .admin-dashboard .sidebar .accordion .accordion-item .accordion-body ul li a {
@@ -65,16 +66,19 @@ body .admin-dashboard .sidebar .accordion .accordion-item .accordion-body ul li 
   transition: all .2s ease-in-out;
 }
 
-body .admin-dashboard .sidebar .accordion .accordion-item .accordion-body ul li a:hover {
+body .admin-dashboard .sidebar .accordion .accordion-item .accordion-body ul li:hover {
   color: #00C65E;
-  border-bottom: 1px solid #00C65E;
-  padding-bottom: 8px;
+  border-color: #00C65E;
 }
 
 body .admin-dashboard .sidebar .accordion .accordion-item .accordion-button {
   color: #212529;
   font-weight: 600;
   border-radius: 8px;
+}
+
+body .admin-dashboard .sidebar .accordion .accordion-item .accordion-button::after {
+  display: none;
 }
 
 body .admin-dashboard .sidebar .accordion .accordion-item .accordion-button:focus {
@@ -98,9 +102,8 @@ body .admin-dashboard .main-dashboard {
 }
 
 body .admin-dashboard .main-dashboard .navBar {
-  background-color: #00c65e3d;
-  border: 2px solid #00C65E;
-  border-left: none;
+  -webkit-box-shadow: 0 0 10px silver;
+          box-shadow: 0 0 10px silver;
 }
 
 body .admin-dashboard .main-dashboard .navBar .profile-user {
@@ -127,5 +130,96 @@ body .admin-dashboard .main-dashboard .navBar .profile-user h5 {
 body .admin-dashboard .main-dashboard .navBar .profile-user img {
   width: 40px;
   height: 40px;
+}
+
+body .admin-dashboard .main-dashboard .card table td {
+  vertical-align: middle;
+}
+
+body .admin-dashboard .main-dashboard .card .text-p {
+  color: #00C65E;
+}
+
+body .admin-dashboard .main-dashboard .card .form-control {
+  border: 1px solid #00C65E;
+}
+
+body .admin-dashboard .main-dashboard .card .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .admin-dashboard .main-dashboard .card .btn-info {
+  background-color: transparent;
+  color: #00C65E;
+  border: 1px solid #00C65E;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+body .admin-dashboard .main-dashboard .card .btn-info:hover {
+  background-color: #00C65E;
+  color: #fff;
+}
+
+body .admin-dashboard .main-dashboard .card .btn-info:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .admin-dashboard .main-dashboard .card .btn-danger {
+  background-color: transparent;
+  color: red;
+  border: 1px solid red;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+body .admin-dashboard .main-dashboard .card .btn-danger:hover {
+  background-color: red;
+  color: #fff;
+}
+
+body .admin-dashboard .main-dashboard .card .btn-danger:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .admin-dashboard .main-dashboard .card .myBtn {
+  background-color: #00C65E;
+  color: #fff;
+  font-weight: 500;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+body .admin-dashboard .main-dashboard .card .myBtn:hover {
+  background-color: transparent;
+  color: #00C65E;
+  border: 1px solid #00C65E;
+}
+
+body .admin-dashboard .main-dashboard .card .myBtn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .admin-dashboard .main-dashboard .card .pagination .page-item .page-link {
+  border: 1px solid #00C65E;
+  color: #282830;
+  font-weight: 500;
+}
+
+body .admin-dashboard .main-dashboard .card .pagination .page-item .page-link:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .admin-dashboard .main-dashboard .card .pagination .page-item .page-link:hover {
+  background-color: #00C65E;
+}
+
+body .admin-dashboard .main-dashboard .card .pagination .page-item.active a {
+  background-color: #00C65E;
 }
 /*# sourceMappingURL=admin.css.map */
